@@ -24,6 +24,7 @@ export const App = () => {
     <div
       style={{ padding: 16, display: "flex", flexDirection: "column", gap: 16 }}
     >
+      <h1>グラフ機能のライブラリを比較する</h1>
       <button
         onClick={() =>
           setSize((prev) => (prev === "small" ? "large" : "small"))
@@ -40,7 +41,11 @@ export const App = () => {
         </div>
         <p>
           リンク：
-          <a href="https://recharts.org/en-US/" target="_blank" rel="noreferrer">
+          <a
+            href="https://recharts.org/en-US/"
+            target="_blank"
+            rel="noreferrer"
+          >
             https://recharts.org/en-US
           </a>
         </p>
@@ -49,6 +54,19 @@ export const App = () => {
           元々ChatGPTに頼んで作ってもらった際にこのパッケージを利用していた。普通に使いやすいと思う。
         </p>
       </div>
+      <footer>
+        <p>
+          このページは
+          <a
+            href="https://github.com/KadoProG/react-chart-test"
+            target="_blank"
+            rel="noreferrer"
+          >
+            こちらのリポジトリ
+          </a>
+          で管理されています。
+        </p>
+      </footer>
     </div>
   );
 };
