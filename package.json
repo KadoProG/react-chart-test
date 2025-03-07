@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://KadoProG.github.io/react-chart-test",
+  "homepage": "https://kadoprog.github.io/react-chart-test",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
