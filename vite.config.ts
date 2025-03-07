@@ -8,16 +8,17 @@ export default defineConfig({
   base: "/react-chart-test/",
   build: {
     rollupOptions: {
-      output: {
-        manualChunks: (id) => {
-          if (id.includes("recharts")) {
-            return "recharts";
-          }
-          if (id.includes("node_modules")) {
-            return "vendor";
-          }
-        },
-      },
+      // パッケージサイズ取得の場合は個々を有効にして検証する
+      // output: {
+      //   manualChunks: (id) => {
+      //     if (id.includes("recharts")) {
+      //       return "recharts";
+      //     }
+      //     if (id.includes("node_modules")) {
+      //       return "vendor";
+      //     }
+      //   },
+      // },
     },
   },
 });
